@@ -23,6 +23,15 @@ export default {
         },
       ],
       'expo-web-browser',
+      [
+        'expo-build-properties',
+        {
+          android: {
+            compileSdkVersion: 35, // at least 34
+            targetSdkVersion: 33, // Only needed if requesting permission on Android 13 via requestPermission, at least 33
+          },
+        },
+      ],
     ],
     experiments: {
       typedRoutes: true,

@@ -35,6 +35,14 @@ export default function TabLayout() {
           // tabBarItemStyle: { display: 'none' },
         }}
       />
+
+      <Tabs.Screen
+        name="dev"
+        options={{
+          title: 'DEV',
+          tabBarIcon: ({ color }) => <TabBarIcon name="bug" color={color} />,
+        }}
+      />
     </Tabs>
   );
 }

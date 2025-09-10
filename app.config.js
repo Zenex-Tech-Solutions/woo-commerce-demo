@@ -27,7 +27,7 @@ export default {
         'expo-build-properties',
         {
           android: {
-            compileSdkVersion: 35, // at least 34
+            compileSdkVersion: 35, // at least 35
             targetSdkVersion: 33, // Only needed if requesting permission on Android 13 via requestPermission, at least 33
           },
         },

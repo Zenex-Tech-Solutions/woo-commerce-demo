@@ -27,6 +27,14 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="checkout"
+        options={{
+          title: 'Checkout',
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          // tabBarItemStyle: { display: 'none' },
+        }}
+      />
     </Tabs>
   );
 }

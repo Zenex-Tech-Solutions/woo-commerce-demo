@@ -40,6 +40,12 @@ export type OrderPayload = {
     method_title: string;
     total: string;
   }[];
+  meta_data: [
+    {
+      key: string;
+      value: string;
+    },
+  ];
 };
 
 export type OrderResponse = {
@@ -97,6 +103,12 @@ export async function placeOrder() {
         {
           product_id: 15, // replace with real WooCommerce product ID
           quantity: 1,
+        },
+      ],
+      meta_data: [
+        {
+          key: '_order_origin',
+          value: 'React Native App',
         },
       ],
     });
